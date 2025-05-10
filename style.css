@@ -123,6 +123,7 @@ body {
 .fade-in-section.visible {
   animation: fadeIn 1s ease-out forwards;
 }
+
 /*1ST SECTION*/
 .hero-3d {
   background-color: #101010;
@@ -323,6 +324,58 @@ body {
   max-width: 90%;
   box-shadow: 0 0px 25px rgba(255, 0, 153, 1);
   animation: pulseMagenta 2.5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .logo-table, .logo-table-1, .logo-table-2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo-cell, .text-cell, .logo-cell-1, .text-cell-1, .logo-cell-2, .text-cell-2 {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+
+  .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  #logo3d, #logo3d-1, #logo3d-2 {
+    width: 80%; /* Reduce image size for small screens */
+    height: auto;
+  }
+
+  .glass-container, .glass-container-1, .glass-container-2 {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .text-cell, .text-cell-1, .text-cell-2 {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-3d, .hero-3d-1, .hero-3d-2 {
+    padding: 3rem 1rem;
+  }
+
+  .text-cell, .text-cell-1, .text-cell-2 {
+    font-size: 14px; /* Adjust text size for very small screens */
+  }
+
+  .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
+    height: 300px; /* Adjust logo size */
+  }
+
+  #logo3d, #logo3d-1, #logo3d-2 {
+    width: 100%; /* Ensure logos fit small screens */
+  }
 }
 
 /*FOOTER*/
