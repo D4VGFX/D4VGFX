@@ -240,10 +240,12 @@ body {
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
     width: 100%;
     height: auto;
+    position: relative; /* Assicurati che l'ombra si posizioni correttamente */
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 80%;
+    width: 80%; /* Riduci la dimensione dell'immagine per gli schermi piccoli */
+    height: auto;
   }
 
   .glass-container, .glass-container-1, .glass-container-2 {
@@ -256,6 +258,27 @@ body {
     text-align: center;
     padding: 1rem;
   }
+
+  /* Modifica per la posizione delle ombre sui dispositivi mobili */
+  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
+    position: absolute;
+    bottom: -10px; /* Aggiungi margine per posizionare meglio l'ombra */
+    left: 50%; /* Centra orizzontalmente l'ombra */
+    transform: translateX(-50%); /* Corregge il centraggio */
+    width: 250px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .logo-shadow-1 {
+    background: rgba(255, 153, 0, 0.5);
+  }
+
+  .logo-shadow-2 {
+    background: rgba(255, 0, 153, 0.5);
+  }
 }
 
 @media (max-width: 480px) {
@@ -264,15 +287,15 @@ body {
   }
 
   .text-cell, .text-cell-1, .text-cell-2 {
-    font-size: 14px;
+    font-size: 14px; /* Riduci la dimensione del testo per schermi molto piccoli */
   }
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 300px;
+    height: 300px; /* Adatta la dimensione dei loghi */
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 100%;
+    width: 100%; /* Assicurati che i loghi si adattino agli schermi piccoli */
   }
 }
 
