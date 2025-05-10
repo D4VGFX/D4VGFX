@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const shadow = document.getElementById("logoShadow");
 
   let startTime = null;
-  const amplitude = 20;
+  const amplitude = 10;
   const duration = 5000;
 
   function animateFluctuation(timestamp) {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const y = -amplitude * ease;
     logo.style.transform = `translateY(${y}px)`;
 
-    const shadowScale = 1 + ease * 0.55;
+    const shadowScale = 0.8 + ease * 0.4;
     const shadowOpacity = 0.15 + ease * 0.5;
 
     shadow.style.transform = `scale(${shadowScale}, ${shadowScale / 3})`;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const shadow = document.querySelector(".logo-shadow-1");
 
   let startTime = null;
-  const amplitude = 20;
+  const amplitude = 10;
   const duration = 5000;
 
   function animateFluctuation(timestamp) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const y = -amplitude * ease;
     if (logo) logo.style.transform = `translateY(${y}px)`;
 
-    const shadowScale = 1 + ease * 0.55;
+    const shadowScale = 0.8 + ease * 0.4;
     const shadowOpacity = 0.15 + ease * 0.5;
 
     if (shadow) {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const shadow = document.querySelector(".logo-shadow-2");
 
   let startTime = null;
-  const amplitude = 20;
+  const amplitude = 10;
   const duration = 5000;
 
   function animateFluctuation(timestamp) {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const y = -amplitude * ease;
     if (logo) logo.style.transform = `translateY(${y}px)`;
 
-    const shadowScale = 1 + ease * 0.55;
+    const shadowScale = 0.8 + ease * 0.4;
     const shadowOpacity = 0.15 + ease * 0.5;
 
     if (shadow) {
