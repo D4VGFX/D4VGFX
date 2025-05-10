@@ -48,24 +48,21 @@ nav {
     color: #ff5959;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 30px;
+        padding: 10px 20px;
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        gap: 10px;
+        gap: 5px;
     }
 
-    .logo {
-        align-self: center;
-        margin-bottom: 10px;
+    .logo img {
+        height: 30px; /* Logo più piccolo sui dispositivi molto piccoli */
+    }
+
+    .nav-links a {
+        font-size: 14px;
     }
 }
 
@@ -226,47 +223,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .logo-table, .logo-table-1, .logo-table-2 {
-    width: 100%;
-    padding: 0;
-  }
-
-  .logo-cell, .text-cell, .logo-cell-1, .text-cell-1, .logo-cell-2, .text-cell-2 {
-    width: 100%;
-    display: block;
-    padding: 1rem;
-  }
-
-  .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    width: 100%;
-    height: auto;
-    position: relative; /* Assicurati che l'ombra si posizioni correttamente */
-  }
-
-  #logo3d, #logo3d-1, #logo3d-2 {
-    width: 80%; /* Riduci la dimensione dell'immagine per gli schermi piccoli */
-    height: auto;
-  }
-
-  .glass-container, .glass-container-1, .glass-container-2 {
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 100%;
-  }
-
-  .text-cell, .text-cell-1, .text-cell-2 {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  /* Modifica per la posizione delle ombre sui dispositivi mobili */
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     position: absolute;
-    bottom: -10px; /* Aggiungi margine per posizionare meglio l'ombra */
-    left: 50%; /* Centra orizzontalmente l'ombra */
-    transform: translateX(-50%); /* Corregge il centraggio */
-    width: 250px;
-    height: 30px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 25px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     z-index: 1;
@@ -279,6 +242,15 @@ body {
   .logo-shadow-2 {
     background: rgba(255, 0, 153, 0.5);
   }
+
+  .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
+    height: 250px;
+    width: 150px;
+  }
+
+  #logo3d, #logo3d-1, #logo3d-2 {
+    width: 70%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -287,15 +259,21 @@ body {
   }
 
   .text-cell, .text-cell-1, .text-cell-2 {
-    font-size: 14px; /* Riduci la dimensione del testo per schermi molto piccoli */
+    font-size: 14px;
   }
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 300px; /* Adatta la dimensione dei loghi */
+    height: 300px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 100%; /* Assicurati che i loghi si adattino agli schermi piccoli */
+    width: 100%;
+  }
+
+  /* Riduci ulteriormente l'altezza delle ombre per dispositivi piccoli */
+  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
+    width: 180px;
+    height: 20px;
   }
 }
 
