@@ -347,7 +347,7 @@ body {
 
 /* Fluttuazione delle icone */
 .social-links a i {
-  animation: float 3s ease-in-out infinite;
+  animation: float 2.5s ease-in-out infinite;
 }
 
 @keyframes float {
