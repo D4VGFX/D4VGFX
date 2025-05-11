@@ -51,6 +51,7 @@ nav {
 @media screen and (max-width: 440px) {
     nav {
         padding: 10px 20px;
+
     }
 
     .nav-links {
@@ -223,23 +224,23 @@ body {
 
 @media (max-width: 768px) {
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 250px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 70%;
+    width: 30%;
   }
 
   /* Rimpicciolisci il testo */
   .text-cell, .text-cell-1, .text-cell-2 {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   /* Riduci la larghezza della shadow */
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 200px;
-    height: 25px;
+    width: 80px;
+    height: 10px;
   }
 
   /* Mantieni la struttura orizzontale su mobile */
