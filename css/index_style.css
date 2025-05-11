@@ -52,7 +52,7 @@ nav {
     nav {
         padding: 10px 20px;
         width: 340px;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
     }
 
     .nav-links {
@@ -286,7 +286,7 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 60px;
     height: 4px;
-    left: -40px;
+    left: 5px;
   }
 }
 
