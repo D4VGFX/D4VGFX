@@ -52,7 +52,7 @@ nav {
     nav {
         padding: 10px 20px;
         width: 340px;
-
+        border-radius: 0.5rem;
     }
 
     .nav-links {
