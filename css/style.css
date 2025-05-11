@@ -51,7 +51,7 @@ nav {
 @media screen and (max-width: 440px) {
     nav {
         padding: 10px 20px;
-        width: 400px;
+        width: 350px;
 
     }
 
@@ -64,7 +64,7 @@ nav {
     }
 
     .nav-links a {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -247,7 +247,7 @@ body {
   .text-cell-2 {
     order: 2;
     width: 100%;
-    font-size: 14px;
+    font-size: 8px;
     padding: 0 1rem 2rem 1rem;
   }
 
@@ -255,8 +255,8 @@ body {
   .logo-wrapper,
   .logo-wrapper-1,
   .logo-wrapper-2 {
-    height: 250px;
-    width: 150px;
+    height: 150px;
+    width: 50px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
