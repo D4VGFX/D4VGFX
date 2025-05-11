@@ -286,7 +286,9 @@ body {
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 100%;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
@@ -312,7 +314,18 @@ body {
     order: 2;
     width: 100%;
     font-size: 8px;
-    padding: 0 1rem 0 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: left;
+  }
+
+  .logo-cell,
+  .logo-cell-1,
+  .logo-cell-2 {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
   }
 }
 
