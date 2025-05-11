@@ -294,6 +294,12 @@ body {
     height: 4px;
     left: 20px;
   }
+
+  .logo-table,
+  .logo-table-1,
+  .logo-table-2 {
+    padding-left: -2rem;
+  }
 }
 
 /*FOOTER*/
