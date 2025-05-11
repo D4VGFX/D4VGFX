@@ -48,7 +48,7 @@ nav {
     color: #ff5959;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 440px) {
     nav {
         padding: 10px 20px;
     }
@@ -125,7 +125,7 @@ body {
 
 /* 1ST SECTION */
 .hero-3d, .hero-3d-1, .hero-3d-2 {
-  background-color: #101010;
+  background-color: #101010; /* Colore della sezione mantenuto */
   padding: 4rem 2rem;
 }
 
@@ -158,7 +158,7 @@ body {
 .text-cell-1,
 .text-cell-2 {
   text-align: left;
-  color: #fff;
+  color: #fff; /* Colore del testo mantenuto */
 }
 
 .logo-wrapper,
@@ -222,26 +222,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 25px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    z-index: 1;
-  }
-
-  .logo-shadow-1 {
-    background: rgba(255, 153, 0, 0.5);
-  }
-
-  .logo-shadow-2 {
-    background: rgba(255, 0, 153, 0.5);
-  }
-
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
     height: 250px;
     width: 150px;
@@ -249,6 +229,17 @@ body {
 
   #logo3d, #logo3d-1, #logo3d-2 {
     width: 70%;
+  }
+
+  /* Rimpicciolisci il testo */
+  .text-cell, .text-cell-1, .text-cell-2 {
+    font-size: 14px;
+  }
+
+  /* Riduci la larghezza della shadow */
+  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
+    width: 200px;
+    height: 25px;
   }
 
   /* Mantieni la struttura orizzontale su mobile */
@@ -287,10 +278,6 @@ body {
 @media (max-width: 480px) {
   .hero-3d, .hero-3d-1, .hero-3d-2 {
     padding: 3rem 1rem;
-  }
-
-  .text-cell, .text-cell-1, .text-cell-2 {
-    font-size: 14px;
   }
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
