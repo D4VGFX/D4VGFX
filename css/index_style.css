@@ -278,7 +278,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-3d, .hero-3d-1, .hero-3d-2 {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
@@ -292,13 +292,18 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 60px;
     height: 4px;
-    left: 20px;
   }
 
   .logo-table,
   .logo-table-1,
   .logo-table-2 {
     padding-left: -2rem;
+  }
+
+  .glass-container,
+  .glass-container-1,
+  .glass-container-2 {
+    border-radius: 25px;
   }
 }
 
