@@ -136,6 +136,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .logo-cell,
@@ -146,6 +151,7 @@ body {
 .text-cell-2 {
   vertical-align: middle;
   padding: 2rem;
+  width: 50%;
 }
 
 .text-cell,
@@ -153,13 +159,6 @@ body {
 .text-cell-2 {
   text-align: left;
   color: #fff;
-  width: 50%;
-}
-
-.logo-cell,
-.logo-cell-1,
-.logo-cell-2 {
-  width: 50%;
 }
 
 .logo-wrapper,
@@ -251,6 +250,38 @@ body {
   #logo3d, #logo3d-1, #logo3d-2 {
     width: 70%;
   }
+
+  /* Mantieni la struttura orizzontale su mobile */
+  .hero-3d .logo-table,
+  .hero-3d-1 .logo-table-1,
+  .hero-3d-2 .logo-table-2 {
+    flex-direction: row !important;
+  }
+
+  .hero-3d .logo-cell,
+  .hero-3d .text-cell,
+  .hero-3d-1 .logo-cell-1,
+  .hero-3d-1 .text-cell-1,
+  .hero-3d-2 .logo-cell-2,
+  .hero-3d-2 .text-cell-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  /* Ordine degli elementi per mantenere layout originale */
+  .hero-3d .logo-cell { order: 1; }
+  .hero-3d .text-cell { order: 2; }
+
+  .hero-3d-1 .text-cell-1 { order: 1; }
+  .hero-3d-1 .logo-cell-1 { order: 2; }
+
+  .hero-3d-2 .logo-cell-2 { order: 1; }
+  .hero-3d-2 .text-cell-2 { order: 2; }
 }
 
 @media (max-width: 480px) {
@@ -270,7 +301,6 @@ body {
     width: 100%;
   }
 
-  /* Riduci ulteriormente l'altezza delle ombre per dispositivi piccoli */
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 180px;
     height: 20px;
