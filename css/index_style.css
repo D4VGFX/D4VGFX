@@ -145,6 +145,12 @@ body {
   flex-wrap: nowrap;
 }
 
+.logo-table,
+.logo-table-1,
+.logo-table-2 {
+  padding-left: 4rem;
+}
+
 .logo-cell,
 .text-cell,
 .logo-cell-1,
