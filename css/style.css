@@ -282,7 +282,7 @@ body {
   }
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 300px;
+    height: 120px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
@@ -290,8 +290,8 @@ body {
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 180px;
-    height: 20px;
+    width: 80px;
+    height: 8px;
   }
 }
 
