@@ -51,12 +51,12 @@ nav {
 @media screen and (max-width: 440px) {
     nav {
         padding: 10px 20px;
-        width: 350px;
+        width: 340px;
 
     }
 
     .nav-links {
-        gap: 5px;
+        gap: 6px;
     }
 
     .logo img {
@@ -64,7 +64,7 @@ nav {
     }
 
     .nav-links a {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
