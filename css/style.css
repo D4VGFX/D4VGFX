@@ -285,8 +285,9 @@ body {
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 80px;
-    height: 8px;
+    width: 60px;
+    height: 4px;
+    left: -40px;
   }
 }
 
