@@ -224,57 +224,50 @@ body {
 }
 
 @media (max-width: 768px) {
-  .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 100px;
-    width: 100px;
-  }
-
-  #logo3d, #logo3d-1, #logo3d-2 {
-    width: 30%;
-  }
-
-  /* Rimpicciolisci il testo */
-  .text-cell, .text-cell-1, .text-cell-2 {
-    font-size: 8px;
-  }
-
-  /* Riduci la larghezza della shadow */
-  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 80px;
-    height: 10px;
-  }
-
-  /* Mantieni la struttura orizzontale su mobile */
+  /* Forza la disposizione verticale su smartphone */
   .hero-3d .logo-table,
   .hero-3d-1 .logo-table-1,
   .hero-3d-2 .logo-table-2 {
-    flex-direction: row !important;
-  }
-
-  .hero-3d .logo-cell,
-  .hero-3d .text-cell,
-  .hero-3d-1 .logo-cell-1,
-  .hero-3d-1 .text-cell-1,
-  .hero-3d-2 .logo-cell-2,
-  .hero-3d-2 .text-cell-2 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    padding: 1rem;
   }
 
-  /* Ordine degli elementi per mantenere layout originale */
-  .hero-3d .logo-cell { order: 1; }
-  .hero-3d .text-cell { order: 2; }
+  /* L'immagine va sopra */
+  .logo-cell,
+  .logo-cell-1,
+  .logo-cell-2 {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 0;
+  }
 
-  .hero-3d-1 .text-cell-1 { order: 1; }
-  .hero-3d-1 .logo-cell-1 { order: 2; }
+  /* Il testo va sotto */
+  .text-cell,
+  .text-cell-1,
+  .text-cell-2 {
+    order: 2;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 1rem 2rem 1rem;
+  }
 
-  .hero-3d-2 .logo-cell-2 { order: 1; }
-  .hero-3d-2 .text-cell-2 { order: 2; }
+  /* Rimpicciolisce immagine */
+  .logo-wrapper,
+  .logo-wrapper-1,
+  .logo-wrapper-2 {
+    height: 250px;
+    width: 150px;
+  }
+
+  #logo3d, #logo3d-1, #logo3d-2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
+    width: 160px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 480px) {
