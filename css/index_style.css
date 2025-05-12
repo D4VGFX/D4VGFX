@@ -392,7 +392,7 @@ body {
     order: 2;
     width: 100%;
     font-size: 9px;
-    padding: 0.5rem;
+    padding: -1rem;
     text-align: left;
   }
 
