@@ -208,11 +208,30 @@ body {
 }
 
 /* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .glass-container-contact,
+  .text-only-glass {
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 750px;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .contact-btn i {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .glass-container-contact,
   .text-only-glass {
     padding: 1.5rem;
     margin: 1rem;
+    max-width: 600px;
   }
 
   .contact-btn {
@@ -229,6 +248,7 @@ body {
   .contact-btn {
     width: 100%;
     justify-content: center;
+    max-width: 340px;
   }
 }
 
