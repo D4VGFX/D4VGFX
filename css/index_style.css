@@ -296,6 +296,12 @@ body {
     height: 15px;
   }
 
+  .glass-container,
+  .glass-container-1,
+  .glass-container-2 {
+    border-radius: 35px;
+  }
+
   footer {
     font-size: 12px;
   }
@@ -355,6 +361,12 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 120px;
     height: 12px;
+  }
+
+  .glass-container,
+  .glass-container-1,
+  .glass-container-2 {
+    border-radius: 35px;
   }
 
   footer {
