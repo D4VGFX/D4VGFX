@@ -248,6 +248,12 @@ body {
   .contact-btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .glass-container-contact,
+  .text-only-glass {
+    padding: 1.5rem;
+    margin: 1rem;
     max-width: 340px;
   }
 }
