@@ -325,7 +325,7 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 100px;
     height: 10px;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 }
 
@@ -347,7 +347,7 @@ body {
 
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
     height: auto;
-    width: 60px;
+    width: 100px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
@@ -374,7 +374,7 @@ body {
     order: 2;
     width: 100%;
     font-size: 4px;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: left;
   }
 
@@ -385,7 +385,6 @@ body {
     width: auto;
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
   }
 }
 
