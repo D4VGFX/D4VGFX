@@ -250,6 +250,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+
+  nav {
+    max-width: 980px;
+  }
+
   .hero-3d .logo-table,
   .hero-3d-1 .logo-table-1,
   .hero-3d-2 .logo-table-2 {
