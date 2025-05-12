@@ -234,7 +234,7 @@ body {
   .hero-3d-1 .logo-table-1,
   .hero-3d-2 .logo-table-2 {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
@@ -403,6 +403,7 @@ body {
     width: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0.5rem;
   }
 
