@@ -273,6 +273,7 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 120px;
     height: 12px;
+    padding-right: 1rem;
   }
 }
 
@@ -324,6 +325,7 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 100px;
     height: 10px;
+    padding-right: 1rem;
   }
 }
 
@@ -357,6 +359,7 @@ body {
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
     width: 70px;
     height: 6px;
+    padding-right: 1rem;
   }
 
   .glass-container,
