@@ -48,6 +48,26 @@ nav {
     color: #ff5959;
 }
 
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 10px 20px;
+        width: 940px;
+        border-radius: 2rem;
+    }
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    .logo img {
+        height: 30px; /* Logo più piccolo sui dispositivi molto piccoli */
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 440px) {
     nav {
         padding: 10px 20px;
