@@ -213,8 +213,11 @@ body {
   .text-only-glass {
     padding: 1.5rem;
     margin: 1rem;
-    max-width: 750px;
+    max-width: 600px;
   }
+  body {
+    padding-top: 100px;
+}
 
   .contact-btn {
     font-size: 0.9rem;
