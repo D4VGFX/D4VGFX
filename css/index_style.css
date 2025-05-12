@@ -229,50 +229,101 @@ body {
   animation: pulseMagenta 2.5s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-  /* Forza la disposizione verticale su smartphone */
+@media (max-width: 1024px) {
   .hero-3d .logo-table,
   .hero-3d-1 .logo-table-1,
   .hero-3d-2 .logo-table-2 {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
   }
 
-  /* L'immagine va sopra */
+  .logo-cell,
+  .logo-cell-1,
+  .logo-cell-2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+
+  .text-cell,
+  .text-cell-1,
+  .text-cell-2 {
+    width: 100%;
+    font-size: 12px;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .logo-wrapper,
+  .logo-wrapper-1,
+  .logo-wrapper-2 {
+    width: 100px;
+    height: auto;
+  }
+
+  #logo3d, #logo3d-1, #logo3d-2 {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
+    width: 120px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-3d .logo-table,
+  .hero-3d-1 .logo-table-1,
+  .hero-3d-2 .logo-table-2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .logo-cell,
   .logo-cell-1,
   .logo-cell-2 {
     order: 1;
-    width: 100%;
+    width: auto;
+    display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    align-items: center;
+    padding: 0.5rem;
   }
 
-  /* Il testo va sotto */
   .text-cell,
   .text-cell-1,
   .text-cell-2 {
     order: 2;
     width: 100%;
-    font-size: 8px;
-    padding: 0 1rem 0 1rem;
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
   }
 
-  /* Rimpicciolisce immagine */
   .logo-wrapper,
   .logo-wrapper-1,
   .logo-wrapper-2 {
-    height: 150px;
-    width: 50px;
+    width: 80px;
+    height: auto;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 80%;
+    width: 100%;
+    max-width: 100px;
     height: auto;
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 160px;
-    height: 20px;
+    width: 100px;
+    height: 10px;
   }
 }
 
@@ -281,25 +332,31 @@ body {
     padding: 1rem;
   }
 
+  .logo-table,
+  .logo-table-1,
+  .logo-table-2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
   .logo-wrapper, .logo-wrapper-1, .logo-wrapper-2 {
-    height: 120px;
+    height: auto;
+    width: 60px;
   }
 
   #logo3d, #logo3d-1, #logo3d-2 {
-    width: 80%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 70px;
     height: auto;
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
-    width: 40px;
-    height: 4px;
-  }
-
-  .logo-table,
-  .logo-table-1,
-  .logo-table-2 {
-    padding-left: -2rem;
+    width: 70px;
+    height: 6px;
   }
 
   .glass-container,
@@ -314,17 +371,17 @@ body {
     order: 2;
     width: 100%;
     font-size: 8px;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    text-align: left;
+    padding: 0.5rem;
+    text-align: center;
   }
 
   .logo-cell,
   .logo-cell-1,
   .logo-cell-2 {
     order: 1;
-    width: 100%;
+    width: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0.5rem;
   }
 }
