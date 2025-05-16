@@ -288,7 +288,6 @@ body {
     align-items: center;
     width: 90%;
     max-width: 100vw;
-    margin-bottom: -15px;
   }
 
   .logo-table, .logo-table-1, .logo-table-2 {
@@ -392,12 +391,11 @@ body {
     align-items: center;
     width: 90%;
     max-width: 100vw;
-    margin-bottom: -15px;
   }
 
   .logo-table, .logo-table-1, .logo-table-2 {
     width: 100%;
-    height: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -496,7 +494,6 @@ body {
     align-items: center;
     width: 90%;
     max-width: 100vw;
-    margin-bottom: -15px;
   }
 
   .logo-table, .logo-table-1, .logo-table-2 {
@@ -600,12 +597,11 @@ body {
     align-items: center;
     width: 90%;
     max-width: 100vw;
-    margin-bottom: -15px;
   }
 
   .logo-table, .logo-table-1, .logo-table-2 {
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -646,7 +642,7 @@ body {
   }
 
   .glass-container, .glass-container-1, .glass-container-2 {
-    border-radius: 2.5rem;
+    border-radius: 2rem;
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
@@ -704,7 +700,6 @@ body {
     align-items: center;
     width: 90%;
     max-width: 100vw;
-    margin-bottom: -15px;
   }
 
   .logo-table, .logo-table-1, .logo-table-2 {
@@ -750,7 +745,8 @@ body {
   }
 
   .glass-container, .glass-container-1, .glass-container-2 {
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
+    height: 145px;
   }
 
   .logo-shadow, .logo-shadow-1, .logo-shadow-2 {
@@ -773,4 +769,22 @@ body {
     font-size: 0.75rem;
     margin: 0 8px;
   }
+}
+
+/* OVERLAY */
+#black-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+#black-overlay.fade-out {
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -112,3 +112,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   requestAnimationFrame(animateFluctuation);
 });
+
+// OVERLAY
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("nav a"); // Cambia se i tuoi link non sono in <nav>
+
+    links.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // Impedisce il cambio pagina immediato
+
+        const targetUrl = this.getAttribute("href"); // Prende l'URL di destinazione
+        const overlay = document.getElementById("black-overlay");
+
+        overlay.classList.add("fade-out"); // Attiva la dissolvenza
+
+        // Dopo 700ms (durata della transizione), cambia pagina
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, 500);
+      });
+    });
+  });
