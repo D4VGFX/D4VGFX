@@ -240,6 +240,10 @@ body {
     padding-right: 20px;
   }
 
+  .text-cell-2 {
+  font-size: 18px;
+}
+
   /* FOOTER */
   .footer {
     padding-bottom: 15px;
@@ -342,6 +346,10 @@ body {
     margin: 0 auto;
     margin-left: -24px;
   }
+
+  .text-cell-2 {
+  font-size: 10px;
+}
 
 /* FOOTER */
   .footer {
@@ -446,6 +454,10 @@ body {
     margin-left: -15px;
   }
 
+  .text-cell-2 {
+  font-size: 9px;
+}
+
 /* FOOTER */
   .footer {
     padding-bottom: 12.5px;
@@ -548,6 +560,10 @@ body {
     margin: 0 auto;
     margin-left: -5.5px;
   }
+
+  .text-cell-2 {
+  font-size: 5.5px;
+}
 
 /* FOOTER */
   .footer {
@@ -652,6 +668,10 @@ body {
     margin-left: -2px;
   }
 
+  .text-cell-2 {
+  font-size: 5.125px;
+}
+
 /* FOOTER */
   .footer {
     padding-bottom: 10px;
@@ -755,6 +775,10 @@ body {
     margin: 0 auto;
     margin-left: -5.5px;
   }
+
+  .text-cell-2 {
+  font-size: 3.5px;
+}
 
 /* FOOTER */
   .footer {
