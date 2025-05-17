@@ -191,15 +191,8 @@ body {
 
 .contact-section {
   background-color: #101010;
-  background: linear-gradient(
-    to bottom,
-    #101010,
-    #222222 50%,
-    #101010
-  );
   padding: 4rem 1rem;
   text-align: center;
-  animation: pulseBackground 2.5s infinite ease-in-out;
 }
 
 .contact-title {
