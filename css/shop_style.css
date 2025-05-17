@@ -1,0 +1,334 @@
+/* NAVBAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1150px;
+    background: rgba(0, 0, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    box-shadow: 0 0px 25px rgba(0, 0, 255, 1);
+    border: 1px solid rgba(0, 0, 255, 0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links span {
+  color: white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5959;
+}
+
+/* BODY */
+body {
+    background-color: #101010;
+    padding-top: 100px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== GLASS CONTAINERS CON EFFETTO PULSE PER 12 TABELLE ===== */
+/* Disposizione a griglia */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Pacchetti su una sola riga */
+.products-grid.packages {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.glass-container {
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0px 25px rgba(0, 255, 255, 1);
+  animation: pulseCyan 2.5s infinite ease-in-out;
+}
+
+.glass-container-1 {
+  background: rgba(0, 0, 255, 0.1);
+  border: 2px solid rgba(0, 0, 255, 0.4);
+  box-shadow: 0 0px 25px rgba(0, 0, 255, 1);
+  animation: pulseBlue 2.5s infinite ease-in-out;
+}
+
+.glass-container-2 {
+  background: rgba(255, 0, 102, 0.1);
+  border: 2px solid rgba(255, 0, 102, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 0, 102, 1);
+  animation: pulseMagenta 2.5s infinite ease-in-out;
+}
+
+.glass-container-3 {
+  background: rgba(255, 0, 0, 0.1);
+  border: 2px solid rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 0, 0, 1);
+  animation: pulseRed 2.5s infinite ease-in-out;
+}
+
+.glass-container-4 {
+  background: rgba(255, 153, 0, 0.1);
+  border: 2px solid rgba(255, 153, 0, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 153, 0, 1);
+  animation: pulseOrange 2.5s infinite ease-in-out;
+}
+
+.glass-container-5 {
+  background: rgba(122, 247, 194, 0.1);
+  border: 2px solid rgba(122, 247, 194, 0.4);
+  box-shadow: 0 0px 25px rgba(122, 247, 194, 1);
+  animation: pulseAquaGreen 2.5s infinite ease-in-out;
+}
+
+.glass-container-6 {
+  background: rgba(255, 160, 122, 0.1);
+  border: 2px solid rgba(255, 160, 122, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 160, 122, 1);
+  animation: pulsePeach 2.5s infinite ease-in-out;
+}
+
+.glass-container-7 {
+  background: rgba(156, 124, 247, 0.1);
+  border: 2px solid rgba(156, 124, 247, 0.4);
+  box-shadow: 0 0px 25px rgba(156, 124, 247, 1);
+  animation: pulseViolet 2.5s infinite ease-in-out;
+}
+
+.glass-container-8 {
+  background: rgba(0, 255, 128, 0.1);
+  border: 2px solid rgba(0, 255, 128, 0.4);
+  box-shadow: 0 0px 25px rgba(0, 255, 128, 1);
+  animation: pulseMint 2.5s infinite ease-in-out;
+}
+
+.glass-container-9 {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 215, 0, 1);
+  animation: pulseGold 2.5s infinite ease-in-out;
+}
+
+.glass-container-10 {
+  background: rgba(0, 128, 255, 0.1);
+  border: 2px solid rgba(0, 128, 255, 0.4);
+  box-shadow: 0 0px 25px rgba(0, 128, 255, 1);
+  animation: pulseSky 2.5s infinite ease-in-out;
+}
+
+.glass-container-11 {
+  background: rgba(255, 51, 153, 0.1);
+  border: 2px solid rgba(255, 51, 153, 0.4);
+  box-shadow: 0 0px 25px rgba(255, 51, 153, 1);
+  animation: pulsePink 2.5s infinite ease-in-out;
+}
+
+/* ANIMAZIONI PULSE PER OGNI COLORE */
+
+@keyframes pulseCyan {
+  0%, 100% { box-shadow: 0 0px 25px rgba(0, 255, 255, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(0, 255, 255, 0.3); }
+}
+
+@keyframes pulseBlue {
+  0%, 100% { box-shadow: 0 0px 25px rgba(0, 0, 255, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(0, 0, 255, 0.3); }
+}
+
+@keyframes pulseMagenta {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 0, 102, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 0, 102, 0.3); }
+}
+
+@keyframes pulseRed {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 0, 0, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 0, 0, 0.3); }
+}
+
+@keyframes pulseOrange {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 153, 0, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 153, 0, 0.3); }
+}
+
+@keyframes pulseAquaGreen {
+  0%, 100% { box-shadow: 0 0px 25px rgba(122, 247, 194, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(122, 247, 194, 0.3); }
+}
+
+@keyframes pulsePeach {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 160, 122, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 160, 122, 0.3); }
+}
+
+@keyframes pulseViolet {
+  0%, 100% { box-shadow: 0 0px 25px rgba(156, 124, 247, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(156, 124, 247, 0.3); }
+}
+
+@keyframes pulseMint {
+  0%, 100% { box-shadow: 0 0px 25px rgba(0, 255, 128, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(0, 255, 128, 0.3); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 215, 0, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 215, 0, 0.3); }
+}
+
+@keyframes pulseSky {
+  0%, 100% { box-shadow: 0 0px 25px rgba(0, 128, 255, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(0, 128, 255, 0.3); }
+}
+
+@keyframes pulsePink {
+  0%, 100% { box-shadow: 0 0px 25px rgba(255, 51, 153, 0.8); }
+  50% { box-shadow: 0 0px 40px rgba(255, 51, 153, 0.3); }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.glass-container, .glass-container-1, .glass-container-2, .glass-container-3, .glass-container-4, .glass-container-5, .glass-container-6, .glass-container-7, .glass-container-8, .glass-container-9, .glass-container-10, .glass-container-11 {
+    border-radius: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+/* SECTIONS CON STILE HERO3D */
+#single-products,
+#packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+/* PULSANTI ACQUISTA */
+.buy-button {
+  background: white;
+  color: black;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.buy-button:hover {
+  transform: scale(1.05);
+}
+
+/*FOOTER*/
+.footer {
+  background: rgba(255, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  margin: 4rem auto 3rem auto;
+  max-width: 80%;
+  border-radius: 2rem;
+  box-shadow: 0 0px 25px rgba(255, 0, 0, 1);
+  border: 2px solid rgba(255, 0, 0, 0.4);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  color: #ff0099;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+/* Fluttuazione delle icone */
+.social-links a i {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* OVERLAY */
+#black-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+#black-overlay.fade-out {
+  opacity: 1;
+  pointer-events: auto;
+}
