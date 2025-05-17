@@ -37,6 +37,10 @@ nav {
     gap: 20px;
 }
 
+.nav-links span {
+  color: white;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #fff;
