@@ -74,6 +74,17 @@ body {
   animation: fadeIn 1s ease-out forwards;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* HERO SECTIONS (valido per .hero-3d, .hero-3d-1, .hero-3d-2) */
 .hero-3d {
   background-color: #101010;

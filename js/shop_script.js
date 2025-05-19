@@ -1,38 +1,37 @@
-// BODY
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll('.fade-in-section');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // rimuove l'effetto dopo la prima animazione
-        }
-      });
-    }, {
-      threshold: 0.2 // quanto della sezione deve entrare nello schermo
+document.addEventListener("DOMContentLoaded", () => {
+  // === Fade-in observer ===
+  const sections = document.querySelectorAll('.fade-in-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.2 });
 
-    sections.forEach(section => observer.observe(section));
-  });
+  sections.forEach(section => observer.observe(section));
 
-  // OVERLAY
-document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("nav a"); // Cambia se i tuoi link non sono in <nav>
+  // === Overlay logic for nav links and buy buttons ===
+  const overlay = document.getElementById("black-overlay");
 
-    links.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault(); // Impedisce il cambio pagina immediato
+  // Seleziona TUTTI i link della navbar + tutti i .buy-button (con qualsiasi colore)
+  const clickableElements = document.querySelectorAll("nav a, .buy-button");
 
-        const targetUrl = this.getAttribute("href"); // Prende l'URL di destinazione
-        const overlay = document.getElementById("black-overlay");
+  clickableElements.forEach(el => {
+    el.addEventListener("click", function (e) {
+      const targetUrl = this.getAttribute("href");
 
-        overlay.classList.add("fade-out"); // Attiva la dissolvenza
+      // Se c'è un URL valido (evita i link con href="#")
+      if (targetUrl && targetUrl !== "#") {
+        e.preventDefault();
 
-        // Dopo 700ms (durata della transizione), cambia pagina
+        overlay.classList.add("fade-out");
+
         setTimeout(() => {
           window.location.href = targetUrl;
         }, 500);
-      });
+      }
     });
   });
+});

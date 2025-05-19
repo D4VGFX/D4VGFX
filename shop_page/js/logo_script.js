@@ -72,6 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSlides(current);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const shopLink = document.querySelector(".shop-hover");
+
+  if (shopLink) {
+    shopLink.addEventListener("mouseenter", () => {
+      shopLink.style.color = "#8800ff";
+    });
+
+    shopLink.addEventListener("mouseleave", () => {
+      shopLink.style.color = "#00ffff";
+    });
+  }
+});
 
 // OVERLAY
 document.addEventListener("DOMContentLoaded", function () {
