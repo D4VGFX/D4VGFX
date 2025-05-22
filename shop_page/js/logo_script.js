@@ -86,6 +86,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const select = document.getElementById('version-select');
+  const info = document.getElementById('version-info');
+  const buyBtn = document.getElementById('buy-btn');
+  select.addEventListener('change', () => {
+    if (select.value === 'base') {
+      info.textContent = '€19,99 — 1 proposta + 1 revisione';
+      buyBtn.href = 'https://buy.stripe.com/versione-base';
+      buyBtn.style.pointerEvents = 'auto';
+      buyBtn.style.opacity = '1';
+    } else if (select.value === 'pro') {
+      info.textContent = '€49,99 — 3 proposte + 3 revisioni';
+      buyBtn.href = 'https://buy.stripe.com/versione-pro';
+      buyBtn.style.pointerEvents = 'auto';
+      buyBtn.style.opacity = '1';
+    } else {
+      info.textContent = '';
+      buyBtn.href = '#';
+      buyBtn.style.pointerEvents = 'none';
+      buyBtn.style.opacity = '0.5';
+    }
+  });
+});
+
 // OVERLAY
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("nav a"); // Cambia se i tuoi link non sono in <nav>

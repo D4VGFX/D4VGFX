@@ -94,8 +94,8 @@ body {
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: 350px;
-  height: 350px;
+  max-width: 100%;
+  height: 400px;
   overflow: hidden;
   border-radius: 2rem;
   margin: 0 auto;
@@ -132,8 +132,14 @@ body {
   background: rgba(0,0,0,0.6);
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev { left: 5px; }
+.carousel-btn.next { right: 5px; }
+
+.text-cell {
+  width: 600px;
+  transform: translateX(2rem);
+  font-size: 14px;
+}
 
 .glass-container {
   max-width: 90%;
@@ -146,6 +152,7 @@ body {
   border: 2px solid rgba(0, 255, 255, 0.4);
   box-shadow: 0 0px 25px rgba(0, 255, 255, 1);
   animation: pulseCyan 2.5s infinite ease-in-out;
+  color: #fff;
 }
 
 .contact-section {
@@ -214,6 +221,7 @@ body {
   justify-content: center;
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
+  margin-top: 20px;
   border-radius: 2rem;
   background: white;
   color: #101010;
@@ -224,9 +232,45 @@ body {
   animation: pulseWhite 2.5s infinite ease-in-out;
 }
 
+.glass-btn:hover {
+  transform: scale(1.05);
+}
+
 @keyframes pulseWhite {
   0%, 100% { box-shadow: 0 0px 25px rgba(255, 255, 255, 0.8); }
   50% { box-shadow: 0 0px 40px rgba(255, 255, 255, 0.3); }
+}
+
+#version-select {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  transition: border 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#version-select:focus {
+  outline: none;
+  border-color: #00ffff;
+}
+
+#version-info {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+#version-select:hover {
+  transform: scale(1.025);
 }
 
 /*FOOTER*/
