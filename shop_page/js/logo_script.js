@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 // OVERLAY
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("nav a"); // Cambia se i tuoi link non sono in <nav>
